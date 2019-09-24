@@ -1,0 +1,6 @@
+---
+- name: Creating User
+  user: 
+    name: "Developer1"
+    password: Test@123!
+    home: /home/Developer1

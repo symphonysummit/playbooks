@@ -1,8 +1,9 @@
-- name: Create a login user
-     user:
-      name: fideloper
-      state: present
-      shell: /bin/bash       # Defaults to /bin/bash
-      system: no             # Defaults to no
-      createhome: yes        # Defaults to yes
-      home: /home/fideloper  # Defaults to /home/<username>
+---
+ - hosts: all
+   tasks:
+     - name: adding user "john doe"
+       user:
+          name: johnd
+          comment: john doe
+          uid: 1040
+          

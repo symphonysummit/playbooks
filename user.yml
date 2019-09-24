@@ -1,4 +1,5 @@
 ---
 ---
-- hosts:all
-   -user-create
+- hosts: all
+  roles:
+   - user

@@ -3,7 +3,7 @@
    tasks:
      - name: adding user "john doe"
        user:
-          name: johnd
+          name: "{{ usname }}"
           comment: john doe
           uid: 1040
           
